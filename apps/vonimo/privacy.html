@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,57 +24,93 @@
   <!-- Production Stylesheet -->
   <link rel="stylesheet" href="../../assets/style.css">
 </head>
-<body class="bg-brandDark text-zinc-300 font-sans antialiased p-6 md:p-16">
-  <div class="max-w-2xl mx-auto space-y-10">
-    <a href="../../index.html" class="inline-flex items-center gap-1.5 text-xs text-zinc-500 hover:text-white transition">
-      <span>&larr;</span> Back to Portfolio
-    </a>
+<body class="bg-brandDark text-zinc-300 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Top Gradient Accent (Matches index.html) -->
+  <div class="h-1 w-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-fuchsia-500"></div>
+
+  <!-- Centered Content Container (Matches index.html max-w-4xl) -->
+  <div class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-8">
     
-    <header class="space-y-2 border-b border-zinc-800 pb-6">
-      <h1 class="text-2xl md:text-3xl font-bold text-white">Vonimo: Support &amp; Privacy</h1>
-      <p class="text-sm text-zinc-400">Support inquiries and privacy policy for Vonimo: Vocabulary Builder</p>
+    <!-- TOP NAVIGATION -->
+    <div>
+      <a href="../../index.html" class="inline-flex items-center gap-2 text-xs font-semibold text-zinc-400 hover:text-white transition">
+        <span>&larr;</span> Back to Portfolio
+      </a>
+    </div>
+    
+    <!-- PAGE HEADER -->
+    <header class="space-y-2">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Vonimo: Support &amp; Privacy Policy</h1>
+      <p class="text-sm md:text-base text-zinc-400 leading-relaxed">
+        Support inquiries and privacy policy for <strong>Vonimo: Vocabulary Builder</strong>
+      </p>
     </header>
 
+    <!-- BALANCED MINIMAL DIVIDER -->
+    <hr class="border-zinc-800 my-6">
+
+    <!-- SECTION 1: SUPPORT & CONTACT -->
     <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-white">Support &amp; Contact</h2>
-      <p class="text-sm text-zinc-400 leading-relaxed">
+      <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Support &amp; Contact</h2>
+      <p class="text-sm md:text-base text-zinc-400 leading-relaxed">
         If you have questions, feedback, encounter any issues, or want to suggest new vocabulary words, please reach out directly:
       </p>
-      <ul class="text-sm space-y-1.5 text-zinc-300 list-disc list-inside">
+      <ul class="text-sm md:text-base space-y-2 text-zinc-300 list-disc pl-5 leading-relaxed">
         <li><strong>Developer:</strong> Emirhan Zeyrek</li>
-        <li><strong>Email:</strong> <a href="mailto:contactemirhanzeyrek@gmail.com" class="underline hover:text-white">contactemirhanzeyrek@gmail.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:contactemirhanzeyrek@gmail.com" class="underline hover:text-white transition">contactemirhanzeyrek@gmail.com</a></li>
         <li><strong>Response Time:</strong> We typically respond within 24–48 hours.</li>
       </ul>
     </section>
 
-    <section class="space-y-4">
-      <h2 class="text-lg font-semibold text-white">Frequently Asked Questions</h2>
-      <div class="space-y-4 text-sm">
-        <div>
-          <h3 class="font-medium text-zinc-200">How do I restore my lifetime Pro purchase?</h3>
-          <p class="text-zinc-400 mt-1">Open Vonimo, navigate to Settings, and tap "Restore Purchases". Your lifetime access will be instantly verified with Apple StoreKit.</p>
+    <!-- BALANCED MINIMAL DIVIDER -->
+    <hr class="border-zinc-800 my-6">
+
+    <!-- SECTION 2: FAQ -->
+    <section class="space-y-6">
+      <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Frequently Asked Questions</h2>
+      <div class="space-y-6 text-sm md:text-base">
+        <div class="space-y-1.5">
+          <h3 class="text-base md:text-lg font-semibold text-white">How do I restore my lifetime Pro purchase?</h3>
+          <p class="text-zinc-400 leading-relaxed">Open Vonimo, navigate to Settings, and tap &ldquo;Restore Purchases&rdquo;. Your lifetime access will be instantly verified with Apple StoreKit.</p>
         </div>
-        <div>
-          <h3 class="font-medium text-zinc-200">Does Vonimo work offline?</h3>
-          <p class="text-zinc-400 mt-1">Yes. All 1,200+ curated vocabulary words, audio pronunciations, and learning progress are stored locally on your device, allowing you to practice anytime without an active internet connection.</p>
+        <div class="space-y-1.5">
+          <h3 class="text-base md:text-lg font-semibold text-white">Does Vonimo work offline?</h3>
+          <p class="text-zinc-400 leading-relaxed">Yes. All 1,200+ curated vocabulary words, audio pronunciations, and learning progress are stored locally on your device, allowing you to practice anytime without an active internet connection.</p>
         </div>
-        <div>
-          <h3 class="font-medium text-zinc-200">How does the freemium access work?</h3>
-          <p class="text-zinc-400 mt-1">Vonimo provides free access to foundational words across A1 and A2 levels. Unlocking the full CEFR library (A1 through C2) and custom practice modes requires a one-time lifetime Pro purchase.</p>
+        <div class="space-y-1.5">
+          <h3 class="text-base md:text-lg font-semibold text-white">How does the freemium access work?</h3>
+          <p class="text-zinc-400 leading-relaxed">Vonimo provides free access to foundational words across A1 and A2 levels. Unlocking the full CEFR library (A1 through C2) and custom practice modes requires a one-time lifetime Pro purchase.</p>
         </div>
       </div>
     </section>
 
-    <section class="space-y-4 border-t border-zinc-800 pt-6">
-      <h2 class="text-lg font-semibold text-white">Privacy Policy</h2>
-      <p class="text-xs text-zinc-500 font-mono">Effective Date: October 2026</p>
-      <div class="space-y-3 text-sm text-zinc-400 leading-relaxed">
+    <!-- BALANCED MINIMAL DIVIDER -->
+    <hr class="border-zinc-800 my-6">
+
+    <!-- SECTION 3: PRIVACY POLICY -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Privacy Policy</h2>
+        <p class="text-xs text-zinc-500 font-mono">Effective Date: October 2026</p>
+      </div>
+      <div class="space-y-3 text-sm md:text-base text-zinc-400 leading-relaxed">
         <p>1. <strong>No Personal Data Collection:</strong> Vonimo does not collect, track, transmit, or sell any personal data, identifiers, or usage analytics.</p>
         <p>2. <strong>On-Device Storage:</strong> Your learning statistics, streaks, bookmarked favorites, and custom study settings remain strictly on your local device.</p>
         <p>3. <strong>No Third-Party SDKs or Ads:</strong> The app contains zero third-party advertising SDKs, behavioral tracking frameworks, or third-party analytics tools.</p>
         <p>4. <strong>In-App Purchases:</strong> In-app transactions are processed securely by Apple via StoreKit. We do not store or process payment or credit card details.</p>
       </div>
     </section>
+
+    <!-- BALANCED MINIMAL DIVIDER -->
+    <hr class="border-zinc-800 my-6">
+
+    <!-- FOOTER -->
+    <footer class="pt-2 flex items-center justify-between text-xs text-zinc-500">
+      <p>&copy; 2026 Vonimo &bull; Emirhan Zeyrek</p>
+      <a href="../../index.html" class="hover:text-white transition">&larr; Return to Portfolio</a>
+    </footer>
+
   </div>
 </body>
 </html>
