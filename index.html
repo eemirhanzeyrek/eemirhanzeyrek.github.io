@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emirhan Zeyrek — iOS & Software Engineer</title>
-  <meta name="description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi.">
+  <meta name="description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <meta name="author" content="Emirhan Zeyrek">
+  <meta name="theme-color" content="#090a0f">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eemirhanzeyrek.github.io/">
+  <meta property="og:title" content="Emirhan Zeyrek — iOS & Software Engineer">
+  <meta property="og:description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <meta property="og:image" content="https://eemirhanzeyrek.github.io/assets/me.jpeg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://eemirhanzeyrek.github.io/">
+  <meta name="twitter:title" content="Emirhan Zeyrek — iOS & Software Engineer">
+  <meta name="twitter:description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <meta name="twitter:image" content="https://eemirhanzeyrek.github.io/assets/me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          },
-          colors: {
-            brandDark: '#090a0f',
-            cardDark: 'rgba(255, 255, 255, 0.03)',
-            cardBorder: 'rgba(255, 255, 255, 0.08)',
-          }
-        }
-      }
-    }
-  </script>
+
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="bg-brandDark text-zinc-300 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
@@ -62,7 +68,7 @@
       </div>
       <div class="relative group">
         <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-cyan-500 to-indigo-500 opacity-20 blur-lg group-hover:opacity-40 transition"></div>
-        <img src="assets/me.jpeg" alt="Emirhan Zeyrek" class="relative w-32 h-32 md:w-36 md:h-36 rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl">
+        <img src="assets/me.jpeg" alt="Emirhan Zeyrek" width="144" height="144" fetchpriority="high" class="relative w-32 h-32 md:w-36 md:h-36 rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl">
       </div>
     </header>
 
@@ -80,7 +86,7 @@
 
         <!-- APP 1: SUBSOI -->
         <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col md:flex-row gap-6">
-          <img src="assets/subsoi-icon.jpeg" alt="Subsoi Icon" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
+          <img src="assets/subsoi-icon.jpeg" alt="Subsoi Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
           <div class="flex-1 space-y-4">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <div>
@@ -107,7 +113,7 @@
 
         <!-- APP 2: VONIMO -->
         <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col md:flex-row gap-6">
-          <img src="assets/vonimo-icon.jpg" alt="Vonimo Icon" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
+          <img src="assets/vonimo-icon.jpg" alt="Vonimo Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
           <div class="flex-1 space-y-4">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <div>
@@ -134,7 +140,7 @@
 
         <!-- APP 3: MECOFI -->
         <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col md:flex-row gap-6">
-          <img src="assets/mecofi-icon.jpg" alt="Mecofi Icon" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
+          <img src="assets/mecofi-icon.jpg" alt="Mecofi Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
           <div class="flex-1 space-y-4">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <div>
@@ -166,9 +172,9 @@
     <section class="space-y-6">
       <div class="border-b border-cardBorder pb-4">
         <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Other Projects</h2>
-        <p class="text-xs md:text-sm text-zinc-500 mt-1">Algorithms, full-stack systems, and engineering repositories</p>
+        <p class="text-xs md:text-sm text-zinc-500 mt-1">Algorithms, research experiments, and engineering repositories</p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 gap-4">
         <a href="https://github.com/eemirhanzeyrek/ClassificationAppWithMATLAB" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl border border-cardBorder bg-cardDark hover:border-zinc-700 transition flex flex-col justify-between space-y-3 group">
           <div class="space-y-1">
             <div class="flex items-center justify-between text-white font-semibold text-sm group-hover:text-cyan-400 transition">
@@ -179,35 +185,6 @@
           </div>
           <span class="text-[11px] font-mono text-zinc-500">MATLAB &bull; MIT License</span>
         </a>
-
-        <div class="p-5 rounded-xl border border-cardBorder bg-cardDark space-y-2">
-          <h3 class="text-white font-semibold text-sm">Full-Stack &amp; Web Systems</h3>
-          <p class="text-xs text-zinc-400">Microservice-based e-commerce architectures, realtime messaging via Socket.io, and task-tracking native experiments.</p>
-          <span class="text-[11px] font-mono text-zinc-500">React &bull; Node.js &bull; SwiftData</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- BACKGROUND & EDUCATION -->
-    <section class="space-y-6">
-      <div class="border-b border-cardBorder pb-4">
-        <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Background</h2>
-      </div>
-      <div class="space-y-6 text-sm">
-        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-1">
-          <div>
-            <h3 class="font-semibold text-white">Düzce University</h3>
-            <p class="text-zinc-400">Master of Science — Computer Engineering</p>
-          </div>
-          <span class="text-xs font-mono text-zinc-500">09.2026 — Present</span>
-        </div>
-        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline gap-1">
-          <div>
-            <h3 class="font-semibold text-white">Düzce University</h3>
-            <p class="text-zinc-400">Bachelor of Science — Computer Engineering (Honors, 3.35 GPA)</p>
-          </div>
-          <span class="text-xs font-mono text-zinc-500">10.2020 — 10.2024</span>
-        </div>
       </div>
     </section>
 
