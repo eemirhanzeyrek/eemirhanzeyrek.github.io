@@ -274,6 +274,22 @@ img, svg {
 .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3); }
 .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
 
+/* Overflow & Scroll Snap */
+.overflow-x-auto { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.snap-x { scroll-snap-type: x mandatory; }
+.snap-start { scroll-snap-align: start; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Image Sizing & Transforms */
+.w-auto { width: auto; }
+.h-60 { height: 15rem; }
+.h-64 { height: 16rem; }
+.h-72 { height: 18rem; }
+.h-80 { height: 20rem; }
+.duration-200 { transition-duration: 200ms; }
+.hover\:scale-\[1\.02\]:hover { transform: scale(1.02); }
+
 /* Animation */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
@@ -310,6 +326,7 @@ img, svg {
   .sm\:flex-row { flex-direction: row; }
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sm\:items-baseline { align-items: baseline; }
+  .sm\:h-72 { height: 18rem; }
 }
 
 @media (min-width: 768px) {
@@ -322,6 +339,7 @@ img, svg {
   .md\:h-24 { height: 6rem; }
   .md\:w-36 { width: 9rem; }
   .md\:h-36 { height: 9rem; }
+  .md\:h-80 { height: 20rem; }
   .md\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
   .md\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
   .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
