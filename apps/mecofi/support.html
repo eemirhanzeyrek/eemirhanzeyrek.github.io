@@ -45,7 +45,7 @@
       <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Mecofi: File &amp; Media Converter</h1>
       <p class="text-lg md:text-xl font-semibold text-zinc-300">Support &amp; FAQ</p>
       <div class="text-xs text-zinc-500 font-mono pt-1">
-        <span>Effective Date: October 2026</span> &bull; <span>Last Updated: November 2026</span>
+        <span>Effective Date: November 2026</span> &bull; <span>Last Updated: November 2026</span>
       </div>
     </header>
 
@@ -81,51 +81,79 @@
       
       <div class="space-y-6 text-sm md:text-base">
         
+        <!-- 1. Mecofi Pro -->
         <div class="space-y-1.5">
           <h3 class="text-base md:text-lg font-semibold text-white">1. How does Mecofi Pro work?</h3>
           <p class="text-zinc-400 leading-relaxed">
-            Mecofi Pro is a <strong>one-time lifetime purchase</strong> (&ldquo;Pay once, own forever&rdquo;). There are no recurring subscription fees or auto-renewals. Upgrading unlocks unlimited batch file conversions, high-resolution document scanning, custom PDF page compilations, full audio format extractions, and future conversion tools.
+            Mecofi Pro is a <strong>one-time lifetime purchase</strong> (&ldquo;Pay once, own forever&rdquo;). There are no recurring subscription fees, hidden charges, or auto-renewals. Upgrading unlocks:
           </p>
+          <ul class="text-zinc-300 list-disc pl-5 space-y-1.5 leading-relaxed pt-1">
+            <li><strong>Unlimited Document Scanner:</strong> Scan multi-page documents and receipts without the 3-page limit.</li>
+            <li><strong>Unlimited Photos to PDF:</strong> Convert unlimited photos into clean, consolidated PDF files.</li>
+            <li><strong>Batch Image Conversion:</strong> Convert multiple images simultaneously with no batch caps.</li>
+            <li><strong>Next-Gen Formats:</strong> Full support for modern HEIC and WebP conversion alongside JPEG and PNG.</li>
+            <li><strong>Video Compression:</strong> Shrink video file sizes with presets for Sharing, 720p HD, and 1080p Full HD.</li>
+            <li><strong>Biometric Vault Lock:</strong> Secure your private files and processed media with Face ID / Touch ID.</li>
+            <li><strong>Private iCloud Sync:</strong> Keep your processed files and metadata seamlessly synced across your Apple devices.</li>
+            <li><strong>Complete ZIP Vault Export:</strong> Back up or export your entire Vault archive in a single tap.</li>
+          </ul>
         </div>
 
+        <!-- 2. Restore Purchase -->
         <div class="space-y-1.5">
           <h3 class="text-base md:text-lg font-semibold text-white">2. How do I restore my Mecofi Pro purchase?</h3>
           <p class="text-zinc-400 leading-relaxed">If you reinstall the app or set up a new Apple device:</p>
           <ol class="text-zinc-300 list-decimal pl-5 space-y-1.5 leading-relaxed">
-            <li>Open <strong>Mecofi</strong> and go to <strong>Settings</strong> (or tap the <strong>Mecofi Pro</strong> banner).</li>
-            <li>Tap <strong>&ldquo;Restore Purchases&rdquo;</strong>.</li>
-            <li>Apple StoreKit 2 will securely validate your previous purchase against your Apple ID and unlock your Pro access instantly.</li>
+            <li>Open <strong>Mecofi</strong> and tap the <strong>Settings</strong> tab.</li>
+            <li>Tap the <strong>Mecofi Pro</strong> banner (or access the Paywall sheet).</li>
+            <li>Tap <strong>&ldquo;Restore Purchases&rdquo;</strong> at the top or bottom of the screen.</li>
           </ol>
-        </div>
-
-        <div class="space-y-1.5">
-          <h3 class="text-base md:text-lg font-semibold text-white">3. Do my files, photos, videos, or scans ever leave my device?</h3>
-          <p class="text-zinc-400 leading-relaxed">
-            <strong>Never.</strong> Mecofi is engineered with a strict 100% on-device architecture. All document scans, image conversions, video audio extractions, and PDF compilations are executed entirely locally on your iPhone using native Apple system frameworks (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VisionKit</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PDFKit</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVFoundation</span>). Your files never touch external servers or cloud services.
+          <p class="text-zinc-400 leading-relaxed pt-1">
+            Apple StoreKit 2 will securely validate your previous transaction against your Apple ID and restore your lifetime access immediately without recharging you.
           </p>
         </div>
 
+        <!-- 3. Offline Architecture -->
         <div class="space-y-1.5">
-          <h3 class="text-base md:text-lg font-semibold text-white">4. Does Mecofi require an active internet connection?</h3>
+          <h3 class="text-base md:text-lg font-semibold text-white">3. Does Mecofi require an internet connection or upload my files to the cloud?</h3>
           <p class="text-zinc-400 leading-relaxed">
-            <strong>No.</strong> All core conversion utilities operate completely offline. An internet connection is only accessed by iOS when verifying in-app purchases or restoring purchases through Apple&rsquo;s App Store servers.
+            No. Mecofi is engineered with a <strong>100% offline, on-device architecture</strong>:
           </p>
-        </div>
-
-        <div class="space-y-1.5">
-          <h3 class="text-base md:text-lg font-semibold text-white">5. What file formats does Mecofi support?</h3>
           <ul class="text-zinc-300 list-disc pl-5 space-y-1.5 leading-relaxed pt-1">
-            <li><strong>Documents &amp; Scanning:</strong> Multi-page PDF creation, smart document scanning, auto-edge detection, and perspective correction.</li>
-            <li><strong>Images:</strong> JPEG, PNG, HEIC, WebP, TIFF, GIF, BMP, and PDF.</li>
-            <li><strong>Media &amp; Audio:</strong> Video-to-audio extraction and conversion supporting MP3, M4A, AAC, WAV, FLAC, AIFF, and CAF from MP4, MOV, and M4V video files.</li>
+            <li>All conversions (photos, PDFs, documents, audio extraction, video compression) run locally using Apple&rsquo;s high-performance native frameworks (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVFoundation</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">Core Image</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">ImageIO</span>, and <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VisionKit</span>).</li>
+            <li>Your documents, photos, audio files, and videos <strong>never</strong> leave your device.</li>
+            <li>We do not operate external processing servers, cloud transcoding APIs, or third-party tracking databases.</li>
           </ul>
         </div>
 
+        <!-- 4. File Storage & iCloud -->
         <div class="space-y-1.5">
-          <h3 class="text-base md:text-lg font-semibold text-white">6. Where are my converted files stored and how do I delete them?</h3>
+          <h3 class="text-base md:text-lg font-semibold text-white">4. Where are my converted and scanned files stored?</h3>
+          <p class="text-zinc-400 leading-relaxed">
+            All processed files are securely stored inside your device&rsquo;s isolated local app sandbox (accessible through the in-app <strong>Vault</strong> tab).
+          </p>
           <ul class="text-zinc-300 list-disc pl-5 space-y-1.5 leading-relaxed pt-1">
-            <li><strong>Storage:</strong> All converted files are stored locally in your device&rsquo;s sandboxed <strong>Vault</strong>. You can export them to the iOS Files app or share them via AirDrop.</li>
-            <li><strong>Delete:</strong> You can delete any converted file from within the Vault, or delete the app to permanently erase all locally stored data.</li>
+            <li>If you are a Pro user and choose to enable <strong>iCloud Sync</strong>, your data is encrypted and synced exclusively through your personal, private Apple CloudKit container tied to your own Apple ID.</li>
+            <li>Nobody&mdash;including the developer&mdash;has access to your documents, photos, or media files.</li>
+          </ul>
+        </div>
+
+        <!-- 5. Supported Formats -->
+        <div class="space-y-1.5">
+          <h3 class="text-base md:text-lg font-semibold text-white">5. What file formats does Mecofi support?</h3>
+          <ul class="text-zinc-300 list-disc pl-5 space-y-1.5 leading-relaxed pt-1">
+            <li><strong>Images:</strong> Convert between HEIC, JPEG, PNG, and WebP with customizable compression quality.</li>
+            <li><strong>Documents &amp; Scans:</strong> Apple VisionKit-powered multi-page scanner with automatic perspective correction, document edge detection, and PDF generation.</li>
+            <li><strong>Media &amp; Audio:</strong> Extract crystal-clear audio tracks (M4A) from videos, or compress MP4/MOV videos with customizable bitrate presets.</li>
+          </ul>
+        </div>
+
+        <!-- 6. Data Export & Deletion -->
+        <div class="space-y-1.5">
+          <h3 class="text-base md:text-lg font-semibold text-white">6. How can I export or permanently delete my data?</h3>
+          <ul class="text-zinc-300 list-disc pl-5 space-y-1.5 leading-relaxed pt-1">
+            <li><strong>Export Vault Data:</strong> Go to <strong>Settings &gt; Data &amp; Sync &gt; Export Vault Data</strong> to package all your stored files into an uncompressed or standard <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">.zip</span> archive ready to share via AirDrop, Files, or Mail.</li>
+            <li><strong>Delete All Data:</strong> Go to <strong>Settings &gt; Data &amp; Sync &gt; Delete All Data</strong> to permanently erase all locally stored files, scanned documents, thumbnails, and database records from your device in one action.</li>
           </ul>
         </div>
 
@@ -143,4 +171,3 @@
   </div>
 </body>
 </html>
-
