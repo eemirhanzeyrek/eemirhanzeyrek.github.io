@@ -45,7 +45,7 @@
       <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Mecofi: File &amp; Media Converter</h1>
       <p class="text-lg md:text-xl font-semibold text-zinc-300">Privacy Policy</p>
       <div class="text-xs text-zinc-500 font-mono pt-1">
-        <span>Effective Date: October 2026</span> &bull; <span>Last Updated: November 2026</span>
+        <span>Effective Date: November 2026</span> &bull; <span>Last Updated: November 2026</span>
       </div>
     </header>
 
@@ -56,72 +56,90 @@
     <section class="space-y-6 text-sm md:text-base leading-relaxed">
       
       <p class="text-sm md:text-base text-zinc-400 leading-relaxed">
-        At Mecofi, we believe privacy is a fundamental human right. Mecofi is engineered from the ground up to operate with zero surveillance and zero data collection.
+        At Mecofi, we believe privacy is a fundamental human right. Mecofi is engineered from the ground up to operate with zero surveillance, zero cloud dependencies, and zero data collection.
       </p>
 
       <!-- 1. ZERO DATA COLLECTION & NO ACCOUNT REQUIRED -->
       <div class="space-y-1.5">
         <h2 class="text-base md:text-lg font-semibold text-white">1. Zero Data Collection &amp; No Account Required</h2>
-        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li>We do <strong>not</strong> collect, store, transmit, or sell any personal, document, image, or audio conversion data.</li>
-          <li>You do not need to register, provide an email, or create an account to use Mecofi.</li>
-          <li>We have no knowledge of the files you scan, convert, or compile into PDFs.</li>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li>We do not collect, store, transmit, monitor, or sell any personal data, media files, or behavioral telemetry.</li>
+          <li>You do not need to register, provide an email address, or create an account to use Mecofi.</li>
+          <li>We have no knowledge of the files you import, convert, scan, compress, or store inside your private Vault.</li>
         </ul>
       </div>
 
-      <!-- 2. ON-DEVICE STORAGE & LOCAL PROCESSING -->
+      <!-- 2. 100% ON-DEVICE PROCESSING & PRIVATE ICLOUD SYNC -->
       <div class="space-y-1.5">
-        <h2 class="text-base md:text-lg font-semibold text-white">2. On-Device Storage &amp; Local Processing</h2>
-        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li><strong>Local Processing:</strong> All computations are executed strictly on your device using native Apple system frameworks (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VisionKit</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PDFKit</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVFoundation</span>).</li>
-          <li><strong>Zero Cloud Transmission:</strong> Your documents, photos, and media files never leave your device. We operate no external conversion servers. Nobody—including the developer—has access to your files.</li>
+        <h2 class="text-base md:text-lg font-semibold text-white">2. 100% On-Device Processing &amp; Private iCloud Sync</h2>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li><strong>Local Processing &amp; Storage:</strong> All image conversions, document scans, PDF creations, audio extractions, and video compressions are executed strictly on your physical device using Apple&rsquo;s native frameworks (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVFoundation</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">Core Image</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">ImageIO</span>, <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VisionKit</span>, and <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">SwiftData</span>). Your files are never uploaded to external servers or cloud transcoding services.</li>
+          <li><strong>Isolated Vault:</strong> Processed files reside exclusively within your device&rsquo;s isolated application sandbox directory.</li>
+          <li><strong>iCloud Sync:</strong> If enabled (Mecofi Pro), sync operations occur directly between your device and your personal Apple iCloud account via Apple&rsquo;s CloudKit Private Database. Your data is encrypted in transit and at rest by Apple. Nobody&mdash;including the developer&mdash;has access to your iCloud containers or files.</li>
         </ul>
       </div>
 
-      <!-- 3. MINIMAL DEVICE PERMISSIONS -->
+      <!-- 3. DEVICE PERMISSIONS (CAMERA & PHOTO LIBRARY) -->
       <div class="space-y-1.5">
-        <h2 class="text-base md:text-lg font-semibold text-white">3. Minimal Device Permissions &amp; Purpose</h2>
-        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li><strong>Camera Permission:</strong> Used strictly in real-time by Apple&rsquo;s native Document Scanner (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VNDocumentCameraViewController</span>) to scan documents. Camera streams are never recorded or analyzed for any other purpose.</li>
-          <li><strong>Photo Library Access:</strong> Used strictly via Apple&rsquo;s secure <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PhotosPicker</span> to allow you to select media to convert. Mecofi only accesses the items you explicitly select.</li>
+        <h2 class="text-base md:text-lg font-semibold text-white">3. Device Permissions (Camera &amp; Photo Library)</h2>
+        <p class="text-zinc-400">
+          Mecofi requests system permissions only when strictly necessary to deliver on-device functionality:
+        </p>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li><strong>Camera Access:</strong> Used solely to scan documents, papers, and receipts through Apple&rsquo;s native Document Camera (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">VisionKit</span>). Scanned frames are processed entirely on-device and are never recorded or transmitted outside your device.</li>
+          <li><strong>Photos &amp; Media Library Access:</strong> Used solely to let you choose photos and videos for conversion or to save converted media directly to your Photos library upon your explicit action.</li>
         </ul>
       </div>
 
       <!-- 4. NO THIRD-PARTY TRACKING & NO ANALYTICS SDKS -->
       <div class="space-y-1.5">
         <h2 class="text-base md:text-lg font-semibold text-white">4. No Third-Party Tracking &amp; No Analytics SDKs</h2>
-        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li>Mecofi contains <strong>zero</strong> third-party advertising frameworks, tracking libraries, or analytics SDKs (e.g., no Firebase, no Google Analytics, no Meta SDK).</li>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li>Mecofi contains zero third-party advertising frameworks, tracking libraries, or remote analytics SDKs (e.g., no Google Firebase, no Google Analytics, no Meta/Facebook SDK, no crash-reporting trackers).</li>
           <li>In accordance with Apple&rsquo;s Privacy Manifest (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PrivacyInfo.xcprivacy</span>), <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">NSPrivacyTracking</span> is set to <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">false</span>, and no tracking domains or collected data types are utilized.</li>
+          <li>Only standard local device preferences (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">UserDefaults</span>) are accessed for basic app settings (such as appearance mode and language selection).</li>
         </ul>
       </div>
 
       <!-- 5. IN-APP PURCHASES & PAYMENT SECURITY -->
       <div class="space-y-1.5">
         <h2 class="text-base md:text-lg font-semibold text-white">5. In-App Purchases &amp; Payment Security</h2>
-        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li>All transactions are processed directly by Apple via <strong>StoreKit 2</strong>.</li>
-          <li>We never see, process, or store your credit card numbers, billing addresses, or bank details. Payment processing is governed by Apple&rsquo;s Privacy Policy.</li>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li>All financial transactions (including Mecofi Pro lifetime unlock) are processed directly by Apple via <strong>StoreKit 2</strong>.</li>
+          <li>We never see, process, or store your credit card numbers, billing addresses, or banking information. All payment processing is strictly governed by Apple&rsquo;s Privacy Policy.</li>
         </ul>
       </div>
 
-      <!-- 6. CHILDREN'S PRIVACY -->
+      <!-- 6. BIOMETRIC SECURITY (FACE ID / TOUCH ID) -->
       <div class="space-y-1.5">
-        <h2 class="text-base md:text-lg font-semibold text-white">6. Children&rsquo;s Privacy</h2>
+        <h2 class="text-base md:text-lg font-semibold text-white">6. Biometric Security (Face ID / Touch ID)</h2>
+        <ul class="text-zinc-400 list-disc pl-5 space-y-1.5 pt-1">
+          <li>If you enable the Vault Lock feature, authentication is performed locally on your device using Apple&rsquo;s <strong>LocalAuthentication</strong> framework and the Secure Enclave.</li>
+          <li>Mecofi never has access to your biometric samples, facial scans, fingerprint data, or cryptographic biometric keys.</li>
+        </ul>
+      </div>
+
+      <!-- 7. CHILDREN'S PRIVACY -->
+      <div class="space-y-1.5">
+        <h2 class="text-base md:text-lg font-semibold text-white">7. Children&rsquo;s Privacy</h2>
         <p class="text-zinc-400 leading-relaxed">
-          Mecofi does not collect any personal information from anyone, including children under the age of 13.
+          Mecofi does not collect or solicit any personal information from anyone, including children under the age of 13. Because no personal data is collected or transmitted, the app is safe for all audiences.
         </p>
       </div>
 
-      <!-- 7. CHANGES TO THIS POLICY & CONTACT -->
+      <!-- 8. CHANGES TO THIS POLICY & CONTACT -->
       <div class="space-y-1.5">
-        <h2 class="text-base md:text-lg font-semibold text-white">7. Changes to This Policy &amp; Contact</h2>
+        <h2 class="text-base md:text-lg font-semibold text-white">8. Changes to This Policy &amp; Contact</h2>
         <p class="text-zinc-400 leading-relaxed">
-          We may update our Privacy Policy if new features are added. However, our core commitment to zero data collection remains permanent. If you have any privacy-related inquiries, contact:
+          We may update our Privacy Policy if new offline utilities or features are added. However, our fundamental commitment to 100% on-device processing and zero data collection remains permanent.
         </p>
-        <p class="text-zinc-300 pt-2">
-          &bull; <strong>Emirhan Zeyrek</strong> &mdash; <a href="mailto:contactemirhanzeyrek@gmail.com" class="underline hover:text-white transition">contactemirhanzeyrek@gmail.com</a>
+        <p class="text-zinc-400 leading-relaxed pt-1">
+          If you have any privacy-related questions or inquiries, please contact:
         </p>
+        <ul class="text-zinc-300 list-disc pl-5 space-y-1 pt-1">
+          <li><strong>Developer:</strong> Emirhan Zeyrek</li>
+          <li><strong>Email:</strong> <a href="mailto:contactemirhanzeyrek@gmail.com" class="underline hover:text-white transition">contactemirhanzeyrek@gmail.com</a></li>
+        </ul>
       </div>
 
     </section>
