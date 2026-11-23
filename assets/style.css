@@ -27,8 +27,6 @@ body {
   margin: 0;
   line-height: inherit;
   background-color: #090a0f;
-  background-image: radial-gradient(circle at 50% -10%, rgba(99, 102, 241, 0.12), rgba(168, 85, 247, 0.04) 35%, transparent 65%);
-  background-repeat: no-repeat;
   color: #d4d4d8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

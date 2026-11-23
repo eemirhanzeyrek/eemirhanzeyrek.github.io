@@ -1,247 +1,187 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emirhan Zeyrek — iOS & Software Engineer</title>
-  <meta name="description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <title>Emirhan Zeyrek — iOS &amp; Software Engineer</title>
+  <meta name="description" content="Emirhan Zeyrek is an iOS & Software Engineer building privacy-first native apps — Subsoi, Vonimo, and Mecofi — with SwiftUI.">
   <meta name="author" content="Emirhan Zeyrek">
-  <meta name="theme-color" content="#090a0f">
+  <link rel="canonical" href="https://eemirhanzeyrek.github.io/">
+  <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
 
-  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Emirhan Zeyrek">
   <meta property="og:url" content="https://eemirhanzeyrek.github.io/">
-  <meta property="og:title" content="Emirhan Zeyrek — iOS & Software Engineer">
-  <meta property="og:description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <meta property="og:title" content="Emirhan Zeyrek — iOS &amp; Software Engineer">
+  <meta property="og:description" content="Privacy-first native iOS apps crafted with SwiftUI. Subsoi, Vonimo, and Mecofi.">
   <meta property="og:image" content="https://eemirhanzeyrek.github.io/assets/images/me.jpeg">
 
   <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://eemirhanzeyrek.github.io/">
-  <meta name="twitter:title" content="Emirhan Zeyrek — iOS & Software Engineer">
-  <meta name="twitter:description" content="Portfolio of Emirhan Zeyrek. Native iOS developer building Subsoi, Vonimo, and Mecofi with SwiftUI and SwiftData.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Emirhan Zeyrek — iOS &amp; Software Engineer">
+  <meta name="twitter:description" content="Privacy-first native iOS apps crafted with SwiftUI. Subsoi, Vonimo, and Mecofi.">
   <meta name="twitter:image" content="https://eemirhanzeyrek.github.io/assets/images/me.jpeg">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/me.jpeg">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
 
-  <!-- Production Stylesheet -->
-  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Emirhan Zeyrek",
+    "jobTitle": "iOS & Software Engineer",
+    "url": "https://eemirhanzeyrek.github.io/",
+    "image": "https://eemirhanzeyrek.github.io/assets/images/me.jpeg",
+    "email": "mailto:contactemirhanzeyrek@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" },
+    "sameAs": ["https://github.com/eemirhanzeyrek", "https://www.linkedin.com/in/eemirhanzeyrek/"]
+  }
+  </script>
 </head>
-<body class="bg-brandDark text-zinc-300 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+<body>
 
-  <div class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-24">
-
-    <!-- HERO SECTION -->
-    <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-8">
-      <div class="relative group flex-shrink-0">
-        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-cyan-500 to-indigo-500 opacity-20 blur-lg group-hover:opacity-40 transition"></div>
-        <img src="assets/images/me.jpeg" alt="Emirhan Zeyrek" width="144" height="144" fetchpriority="high" class="relative w-28 h-28 md:w-32 md:h-32 rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="./" class="nav-brand" aria-label="Home">
+        <img src="assets/images/me.jpeg" alt="" width="26" height="26">
+        <span>Emirhan Zeyrek</span>
+      </a>
+      <div class="nav-links">
+        <a href="apps/">Apps</a>
+        <a href="#stack">Stack</a>
+        <a href="mailto:contactemirhanzeyrek@gmail.com">Contact</a>
       </div>
-      <div class="space-y-3.5 max-w-xl">
-        <div class="space-y-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cardDark border border-cardBorder text-xs text-zinc-300">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Available for iOS opportunities</span>
-            <span class="text-zinc-600">&bull;</span>
-            <span class="text-zinc-400">Istanbul, TR</span>
-          </div>
-          <div>
-            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Emirhan Zeyrek
-            </h1>
-            <p class="text-zinc-300 font-medium text-base md:text-lg mt-0.5">
-              iOS &amp; Software Engineer
-            </p>
-          </div>
-        </div>
-        <p class="text-zinc-400 text-sm md:text-base leading-relaxed">
-          Building robust, privacy-first software across mobile, web, and desktop &mdash; with an uncompromising focus on performance, quality, and craftsmanship.
-        </p>
-        <div class="flex flex-wrap items-center gap-4 pt-1">
-          <a href="mailto:contactemirhanzeyrek@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-white text-zinc-950 hover:bg-zinc-200 transition">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Get in touch
-          </a>
-          <a href="https://github.com/eemirhanzeyrek" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-cardBorder bg-cardDark hover:border-zinc-500 text-zinc-300 hover:text-white transition" aria-label="GitHub">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/eemirhanzeyrek/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-cardBorder bg-cardDark hover:border-zinc-500 text-zinc-300 hover:text-white transition" aria-label="LinkedIn">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-        </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-avatar reveal" style="--i:0" src="assets/images/me.jpeg" alt="Emirhan Zeyrek" width="72" height="72" fetchpriority="high">
+      <div class="reveal" style="--i:1">
+        <div class="status"><span class="dot"></span>Available for iOS opportunities &middot; Istanbul, TR</div>
       </div>
-    </header>
-
-    <!-- FEATURED NATIVE APPS SECTION -->
-    <section class="space-y-8">
-      <div class="border-b border-cardBorder pb-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-        <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Apps</h2>
-        <span class="text-xs text-zinc-500 font-mono">Native iOS &bull; Privacy-First &bull; Offline Architecture</span>
-      </div>
-
-      <div class="grid grid-cols-1 gap-6">
-
-        <!-- APP 1: SUBSOI -->
-        <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col gap-6">
-          <div class="flex flex-col sm:flex-row gap-6">
-            <img src="assets/images/subsoi/subsoi-icon.jpeg" alt="Subsoi Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
-            <div class="flex-1 space-y-4">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-cyan-400 transition">Subsoi: Subscription Tracker</h3>
-                <a href="https://apps.apple.com/tr/app/subsoi-subscription-tracker/id6822862889" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-lg font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  App Store &nearr;
-                </a>
-              </div>
-              <p class="text-sm text-zinc-400 leading-relaxed">
-                Intuitive, privacy-focused subscription tracker designed to manage and optimize recurring expenses in one clean place. Features smart renewal alerts, detailed spending insights, multi-currency conversion, and 100% on-device data privacy.
-              </p>
-              <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">SwiftUI</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">SwiftData</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">StoreKit 2</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">Charts</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">UserNotifications</span>
-              </div>
-              <div class="pt-1 flex flex-wrap items-center gap-4 text-xs">
-                <a href="apps/subsoi/support.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Support &rarr;</a>
-                <a href="apps/subsoi/privacy.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Privacy Policy &rarr;</a>
-                <a href="apps/subsoi/terms.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Terms &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- App Screenshots Gallery -->
-          <div class="pt-2 flex gap-4 overflow-x-auto no-scrollbar snap-x">
-            <img src="assets/images/subsoi/screen-1.png" alt="Subsoi Screen 1" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/subsoi/screen-2.png" alt="Subsoi Screen 2" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/subsoi/screen-3.png" alt="Subsoi Screen 3" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/subsoi/screen-4.png" alt="Subsoi Screen 4" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-          </div>
-        </article>
-
-        <!-- APP 2: VONIMO -->
-        <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col gap-6">
-          <div class="flex flex-col sm:flex-row gap-6">
-            <img src="assets/images/vonimo/vonimo-icon.jpg" alt="Vonimo Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
-            <div class="flex-1 space-y-4">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-emerald-400 transition">Vonimo: Vocabulary Builder</h3>
-                <a href="https://apps.apple.com/tr/app/vonimo-vocabulary-builder/id6829221158" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-lg font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  App Store &nearr;
-                </a>
-              </div>
-              <p class="text-sm text-zinc-400 leading-relaxed">
-                Structured and engaging vocabulary builder designed to master 1,200+ curated words across CEFR levels A1 to C2. Features dynamic practice modes (Smart Flashcards, Survival, Sprint), native audio pronunciations, and detailed progress tracking.
-              </p>
-              <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">SwiftUI</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">AVFoundation</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">StoreKit 2</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">SwiftData</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">CoreHaptics</span>
-              </div>
-              <div class="pt-1 flex flex-wrap items-center gap-4 text-xs">
-                <a href="apps/vonimo/support.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Support &rarr;</a>
-                <a href="apps/vonimo/privacy.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Privacy Policy &rarr;</a>
-                <a href="apps/vonimo/terms.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Terms &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- App Screenshots Gallery -->
-          <div class="pt-2 flex gap-4 overflow-x-auto no-scrollbar snap-x">
-            <img src="assets/images/vonimo/screen-1.png" alt="Vonimo Screen 1" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/vonimo/screen-2.png" alt="Vonimo Screen 2" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/vonimo/screen-3.png" alt="Vonimo Screen 3" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/vonimo/screen-4.png" alt="Vonimo Screen 4" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-          </div>
-        </article>
-
-        <!-- APP 3: MECOFI -->
-        <article class="p-6 md:p-8 rounded-2xl border border-cardBorder bg-cardDark hover:border-zinc-700/60 transition group flex flex-col gap-6">
-          <div class="flex flex-col sm:flex-row gap-6">
-            <img src="assets/images/mecofi/mecofi-icon.jpg" alt="Mecofi Icon" width="96" height="96" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-cover shadow-xl flex-shrink-0 ring-1 ring-white/10">
-            <div class="flex-1 space-y-4">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-purple-400 transition">Mecofi: File &amp; Media Converter</h3>
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs rounded-lg font-medium bg-amber-400/10 text-amber-300 border border-amber-400/20">
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-                  In Review
-                </span>
-              </div>
-              <p class="text-sm text-zinc-400 leading-relaxed">
-                All-in-one, privacy-focused offline utility designed to convert, compress, and scan documents with zero cloud dependencies. Features next-gen image conversion, fast video compression, intelligent PDF creation, and a private biometric Vault.
-              </p>
-              <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">SwiftUI</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">VisionKit</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">PDFKit</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">AVFoundation</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">Core Image</span>
-                <span class="px-2 py-0.5 text-[11px] font-mono rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/40">Local Vault</span>
-              </div>
-              <div class="pt-1 flex flex-wrap items-center gap-4 text-xs">
-                <a href="apps/mecofi/support.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Support &rarr;</a>
-                <a href="apps/mecofi/privacy.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Privacy Policy &rarr;</a>
-                <a href="apps/mecofi/terms.html" class="text-zinc-400 hover:text-white underline underline-offset-4 transition">Terms &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- App Screenshots Gallery -->
-          <div class="pt-2 flex gap-4 overflow-x-auto no-scrollbar snap-x">
-            <img src="assets/images/mecofi/screen-1.png" alt="Mecofi Screen 1" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-2.png" alt="Mecofi Screen 2" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-3.png" alt="Mecofi Screen 3" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-4.png" alt="Mecofi Screen 4" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-5.png" alt="Mecofi Screen 5" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-6.png" alt="Mecofi Screen 6" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-            <img src="assets/images/mecofi/screen-7.png" alt="Mecofi Screen 7" width="180" height="391" loading="lazy" class="h-64 sm:h-72 md:h-80 w-auto rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl flex-shrink-0 snap-start hover:scale-[1.02] transition duration-200">
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- SELECTED ENGINEERING WORK & ARCHIVE -->
-    <section class="space-y-6">
-      <div class="border-b border-cardBorder pb-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-        <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Open Source &amp; Research</h2>
-        <span class="text-xs text-zinc-500 font-mono">Algorithms &bull; Deep Learning &bull; MIT License</span>
-      </div>
-      <div class="grid grid-cols-1 gap-4">
-        <a href="https://github.com/eemirhanzeyrek/ClassificationAppWithMATLAB" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl border border-cardBorder bg-cardDark hover:border-zinc-700 transition flex flex-col justify-between space-y-3 group">
-          <div class="space-y-1">
-            <div class="flex items-center justify-between text-white font-semibold text-sm group-hover:text-cyan-400 transition">
-              <span>ClassificationAppWithMATLAB</span>
-              <svg class="w-4 h-4 text-zinc-500 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </div>
-            <p class="text-xs text-zinc-400">Image classification utilizing a trained deep learning model in MATLAB.</p>
-          </div>
-          <span class="text-[11px] font-mono text-zinc-500">MATLAB &bull; MIT License</span>
+      <h1 class="reveal" style="--i:2">Emirhan Zeyrek</h1>
+      <p class="role reveal" style="--i:2">iOS &amp; Software Engineer</p>
+      <p class="bio reveal" style="--i:3">
+        I build <strong>privacy-first native software</strong> for Apple platforms &mdash; apps that run fully on-device, respect their users, and feel at home on iOS. Focused on performance, quality, and craftsmanship.
+      </p>
+      <div class="actions reveal" style="--i:4">
+        <a href="mailto:contactemirhanzeyrek@gmail.com" class="btn btn-primary">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Get in touch
+        </a>
+        <a href="https://github.com/eemirhanzeyrek" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="GitHub">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/eemirhanzeyrek/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-icon" aria-label="LinkedIn">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="pt-12 border-t border-cardBorder flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-      <p>&copy; 2026 Emirhan Zeyrek</p>
-      <div class="flex items-center gap-6">
-        <a href="mailto:contactemirhanzeyrek@gmail.com" class="hover:text-white transition">Email</a>
-        <a href="https://github.com/eemirhanzeyrek" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">GitHub</a>
-        <a href="https://www.linkedin.com/in/eemirhanzeyrek/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">LinkedIn</a>
+    <!-- APPS -->
+    <section class="reveal" style="--i:5">
+      <div class="section-head">
+        <h2 class="section-title">Apps</h2>
+        <a href="apps/" class="section-link">View all &rarr;</a>
       </div>
-    </footer>
+      <div class="app-list">
+        <a href="apps/#subsoi" class="app-row">
+          <img src="assets/images/subsoi/subsoi-icon.jpeg" alt="Subsoi icon" width="52" height="52" loading="lazy">
+          <div class="meta">
+            <div class="name">Subsoi</div>
+            <div class="desc">Privacy-focused subscription tracker</div>
+          </div>
+          <span class="badge"><span class="dot"></span>App Store</span>
+          <svg class="arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+        <a href="apps/#vonimo" class="app-row">
+          <img src="assets/images/vonimo/vonimo-icon.jpg" alt="Vonimo icon" width="52" height="52" loading="lazy">
+          <div class="meta">
+            <div class="name">Vonimo</div>
+            <div class="desc">CEFR vocabulary builder, A1 to C2</div>
+          </div>
+          <span class="badge"><span class="dot"></span>App Store</span>
+          <svg class="arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+        <a href="apps/#mecofi" class="app-row">
+          <img src="assets/images/mecofi/mecofi-icon.jpg" alt="Mecofi icon" width="52" height="52" loading="lazy">
+          <div class="meta">
+            <div class="name">Mecofi</div>
+            <div class="desc">Offline file &amp; media converter</div>
+          </div>
+          <span class="badge"><span class="dot amber"></span>In Review</span>
+          <svg class="arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
 
-  </div>
+    <!-- PRINCIPLES -->
+    <section class="reveal" style="--i:6">
+      <div class="section-head">
+        <h2 class="section-title">Principles</h2>
+      </div>
+      <ul class="principles">
+        <li><span class="num">01</span><div><strong>Privacy by design</strong><span>No accounts, no tracking, no analytics SDKs. Data stays on the user&rsquo;s device.</span></div></li>
+        <li><span class="num">02</span><div><strong>Native first</strong><span>Built with Apple&rsquo;s own frameworks to feel fast, familiar, and accessible.</span></div></li>
+        <li><span class="num">03</span><div><strong>Offline by default</strong><span>Every core feature works without a network connection.</span></div></li>
+        <li><span class="num">04</span><div><strong>Fair pricing</strong><span>Honest one-time purchases over dark-pattern subscriptions.</span></div></li>
+      </ul>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="reveal" style="--i:7">
+      <div class="section-head">
+        <h2 class="section-title">Stack</h2>
+      </div>
+      <div class="stack">
+        <div><h3>Languages</h3><p>Swift, Python, JavaScript, MATLAB</p></div>
+        <div><h3>UI</h3><p>SwiftUI, UIKit, Swift Charts</p></div>
+        <div><h3>Data &amp; Sync</h3><p>SwiftData, Core Data, CloudKit</p></div>
+        <div><h3>Media &amp; Vision</h3><p>AVFoundation, VisionKit, PDFKit, Core Image</p></div>
+        <div><h3>Monetization</h3><p>StoreKit 2, In-App Purchases</p></div>
+        <div><h3>Tooling</h3><p>Xcode, Instruments, Git, App Store Connect</p></div>
+      </div>
+    </section>
+
+    <!-- OPEN SOURCE -->
+    <section class="reveal" style="--i:8">
+      <div class="section-head">
+        <h2 class="section-title">Open Source &amp; Research</h2>
+        <a href="https://github.com/eemirhanzeyrek" target="_blank" rel="noopener noreferrer" class="section-link">GitHub &rarr;</a>
+      </div>
+      <a href="https://github.com/eemirhanzeyrek/ClassificationAppWithMATLAB" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="card-top">
+          <span class="card-title">ClassificationAppWithMATLAB</span>
+          <svg class="ext" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></svg>
+        </div>
+        <p>Image classification utilizing a trained deep learning model in MATLAB.</p>
+        <div class="tags"><span class="tag">MATLAB</span><span class="tag">Deep Learning</span><span class="tag">MIT License</span></div>
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Emirhan Zeyrek</p>
+      <div class="footer-links">
+        <a href="mailto:contactemirhanzeyrek@gmail.com">Email</a>
+        <a href="https://github.com/eemirhanzeyrek" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/eemirhanzeyrek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
