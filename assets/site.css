@@ -100,7 +100,7 @@ img { display: block; max-width: 100%; }
 .nav-links a[aria-current="page"] { color: var(--text); }
 
 /* ---------- Layout ---------- */
-main { padding: 56px 0 60px; }
+main { padding: 48px 0 60px; }
 section { margin-bottom: 72px; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; gap: 12px; }
 .section-title {
@@ -285,7 +285,7 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 48px; font-size: 1
 
 /* ---------- Responsive ---------- */
 @media (max-width: 560px) {
-  main { padding-top: 44px; }
+  main { padding-top: 36px; }
   section { margin-bottom: 56px; }
   .stack { grid-template-columns: 1fr; }
   .showcase { padding-bottom: 30px; margin-bottom: 34px; }
