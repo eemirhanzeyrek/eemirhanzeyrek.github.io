@@ -294,5 +294,4 @@ footer { border-top: 1px solid var(--border); padding: 28px 0 48px; font-size: 1
   .stack { grid-template-columns: 1fr; }
   .gallery img { height: 320px; }
   .app-row .badge { display: none; }
-  .nav-brand span { display: none; }
 }
