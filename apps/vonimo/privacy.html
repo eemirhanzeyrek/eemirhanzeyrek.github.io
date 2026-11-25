@@ -69,12 +69,12 @@
         </ul>
       </div>
 
-      <!-- 2. ON-DEVICE STORAGE & LOCAL DATA PRIVACY -->
+      <!-- 2. ON-DEVICE STORAGE & END-TO-END PRIVATE ICLOUD SYNC -->
       <div class="space-y-1.5">
-        <h2 class="text-base md:text-lg font-semibold text-white">2. On-Device Storage &amp; Local Data Privacy</h2>
+        <h2 class="text-base md:text-lg font-semibold text-white">2. On-Device Storage &amp; End-to-End Private iCloud Sync</h2>
         <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li><strong>Local Storage:</strong> All vocabulary mastery levels, test logs, learning streaks, and bookmarks reside strictly on your device via Apple SwiftData.</li>
-          <li><strong>Zero Cloud Transmission:</strong> We operate no external databases or cloud servers. Your learning data never leaves your device unless you choose to export a backup file via the iOS share sheet. Nobody—including the developer—has access to your learning records.</li>
+          <li><strong>Local Storage:</strong> All vocabulary mastery levels, quiz history, learning streaks, and saved favorites reside strictly on your device via Apple SwiftData.</li>
+          <li><strong>iCloud Sync:</strong> If enabled, sync operations occur directly between your device and your personal Apple iCloud account (CloudKit Private Database / Ubiquity Container). Your data is encrypted in transit and at rest by Apple. Nobody—including the developer—has access to your private iCloud data or learning records.</li>
         </ul>
       </div>
 
@@ -83,7 +83,7 @@
         <h2 class="text-base md:text-lg font-semibold text-white">3. No Third-Party Tracking &amp; No Analytics SDKs</h2>
         <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
           <li>Vonimo contains <strong>zero</strong> third-party advertising frameworks, tracking libraries, or analytics SDKs (e.g., no Firebase, no Google Analytics, no Meta SDK).</li>
-          <li>In accordance with Apple&rsquo;s Privacy Manifest (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PrivacyInfo.xcprivacy</span>), <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">NSPrivacyTracking</span> is set to <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">false</span>, and no tracking domains or collected data types are utilized. Only standard local user defaults are accessed for app preferences (daily goals, theme, audio).</li>
+          <li>In accordance with Apple&rsquo;s Privacy Manifest (<span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">PrivacyInfo.xcprivacy</span>), <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">NSPrivacyTracking</span> is set to <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">false</span>, and no tracking domains or collected data types are utilized. Only standard local user defaults are accessed for app preferences (daily word target, theme, audio feedback, language).</li>
         </ul>
       </div>
 
@@ -100,8 +100,8 @@
       <div class="space-y-1.5">
         <h2 class="text-base md:text-lg font-semibold text-white">5. On-Device Audio &amp; Local Notifications</h2>
         <ul class="text-zinc-400 list-disc pl-5 space-y-1.5">
-          <li>Word pronunciations are synthesized directly on your device using Apple&rsquo;s native <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVSpeechSynthesizer</span>. Vonimo does not request microphone permissions and does not record or analyze audio.</li>
-          <li>Daily study reminders are scheduled strictly on your local device via Apple&rsquo;s UserNotifications framework without external push servers.</li>
+          <li>Word pronunciations are synthesized directly on your device using Apple&rsquo;s native <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-white/5 text-zinc-300">AVSpeechSynthesizer</span>. Vonimo does not request microphone permissions and does not record, capture, or analyze audio.</li>
+          <li>Daily study reminders are scheduled strictly on your local device via Apple&rsquo;s UserNotifications framework without external push servers or background tracking.</li>
         </ul>
       </div>
 
